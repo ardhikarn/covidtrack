@@ -3,8 +3,7 @@ import axios from "axios";
 import imageHeader from "../../images/covidweb.png";
 import styles from "./Home.module.css";
 import Typography from "@material-ui/core/Typography";
-import OptionCountry from "../../components/OptionCountry/OptionCountry";
-import Cards from "../../components/Cards/Cards";
+import { Cards, OptionCountry, Chart } from "../../components";
 
 class Home extends React.Component {
   state = {
@@ -47,8 +46,7 @@ class Home extends React.Component {
   };
 
   render() {
-    console.log(this.state.data);
-    const { data } = this.state;
+    const { data, country } = this.state;
     const lastUpdate = new Date(data.lastUpdate).toDateString();
     return (
       <div className={styles.container}>
@@ -58,6 +56,7 @@ class Home extends React.Component {
         </Typography>
         <OptionCountry handleCountryChange={this.handleCountryChange} />
         <Cards data={data} />
+        <Chart data={data} country={country} />
       </div>
     );
   }

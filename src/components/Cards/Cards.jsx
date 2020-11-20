@@ -10,24 +10,24 @@ const Cards = ({ data: { confirmed, recovered, deaths } }) => {
 
   return (
     <div className={styles.container}>
-      <Grid container spacing={7}>
+      <Grid container spacing={3} justify="center">
         <CardComponent
           className={styles.confirmed}
           cardTitle="Confirmed"
           value={confirmed.value}
-          cardSubtitle="Confirmed People Covid"
+          cardSubtitle="Number of active cases from COVID-19."
         />
         <CardComponent
           className={styles.recovered}
           cardTitle="Recovered"
           value={recovered.value}
-          cardSubtitle="Recovered People Covid"
+          cardSubtitle="Number of recoveries from COVID-19."
         />
         <CardComponent
           className={styles.deaths}
           cardTitle="Death"
           value={deaths.value}
-          cardSubtitle="Death People Covid"
+          cardSubtitle="Number of deaths caused by COVID-19."
         />
       </Grid>
     </div>

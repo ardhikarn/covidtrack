@@ -9,11 +9,9 @@ const CardComponent = ({ className, cardTitle, value, cardSubtitle }) => {
     <Grid
       item
       xs={12}
-      md={4}
-      lg={4}
+      md={3}
       component={Card}
       className={cn(styles.card, className)}
-      spacing={10}
     >
       <CardContent>
         <Typography color="textSecondary" gutterBottom>
