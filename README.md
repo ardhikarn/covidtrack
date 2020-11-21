@@ -1,6 +1,6 @@
 # CovidTrack
 
-![CovidTrack](https://raw.githubusercontent.com/ardhikarn/covidtrack/tree/master/covidtrack.png)
+![CovidTrack](https://raw.githubusercontent.com/ardhikarn/covidtrack/master/covidtrack.png)
 
 ## Introduction
 
