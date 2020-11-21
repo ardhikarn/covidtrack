@@ -7,12 +7,13 @@ import { Cards, OptionCountry, Chart } from "../../components";
 
 class Home extends React.Component {
   state = {
-    name: "",
+    country: "",
     data: {},
   };
 
   componentDidMount() {
     this.getData();
+    console.log(this.state.data);
   }
 
   getData = (country) => {
@@ -32,7 +33,7 @@ class Home extends React.Component {
 
   handleChange = (event) => {
     this.setState({
-      name: event.target.value,
+      country: event.target.value,
     });
   };
 

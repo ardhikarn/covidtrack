@@ -29,8 +29,7 @@ const OptionCountry = ({ handleCountryChange }) => {
         <option value="">Global</option>
         {countries.map((country, index) => (
           <option key={index} value={country}>
-            {" "}
-            {country}{" "}
+            {country}
           </option>
         ))}
       </NativeSelect>
